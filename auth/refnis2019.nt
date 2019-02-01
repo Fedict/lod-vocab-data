@@ -1,12 +1,12 @@
 <http://vocab.belgif.be/auth/refnis2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/title> "REFNIS-1995"@nl .
-<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/title> "REFNIS-1995"@fr .
-<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/title> "REFNIS-1995"@de .
-<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/title> "REFNIS-1995"@en .
-<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/description> "REFNIS (vanaf 1995): de administratieve indeling gebeurt aan de hand van vier territoriale eenheden: gewesten, provincies, bestuurlijke arrondissementen en gemeenten."@nl .
-<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/description> "REFNIS (à partir de 1995): la division administrative repose sur quatre unités territoriales : les r\u00E9gions, les provinces, les arrondissements administratifs et les communes."@fr .
-<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/description> "REFNIS (ab 1995)"@de .
-<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/description> "REFNIS (starting in 1995)"@en .
+<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/title> "REFNIS-2019"@nl .
+<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/title> "REFNIS-2019"@fr .
+<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/title> "REFNIS-2019"@de .
+<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/title> "REFNIS-2019"@en .
+<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/description> "REFNIS (vanaf 2019): de administratieve indeling gebeurt aan de hand van vier territoriale eenheden: gewesten, provincies, bestuurlijke arrondissementen en gemeenten."@nl .
+<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/description> "REFNIS (à partir de 2019): la division administrative repose sur quatre unités territoriales : les r\u00E9gions, les provinces, les arrondissements administratifs et les communes."@fr .
+<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/description> "REFNIS (ab 2019)"@de .
+<http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/description> "REFNIS (starting in 2019)"@en .
 <http://vocab.belgif.be/auth/refnis2019> <http://purl.org/dc/terms/license> <http://statbel.fgov.be/en/statistics/opendata/licence/> .
 <http://vocab.belgif.be/auth/refnis2019/1000> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/refnis2019> .
 <http://vocab.belgif.be/auth/refnis2019> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/refnis2019/1000> .

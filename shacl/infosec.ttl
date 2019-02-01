@@ -7,7 +7,8 @@
 <http://vocab.belgif.be/shacl/infosec#> a owl:Ontology;
   rdfs:comment "Information security SHACL rules"@en, "Information security SHACL rules"@fr,
     "Information security SHACL rules"@nl, "Information security SHACL rulez"@de;
-  rdfs:label "Inf oSec"@de, "InfoSec"@en, "InfoSec"@fr, "InfoSec"@nl.
+  rdfs:label "InfoSec"@de, "InfoSec"@en, "InfoSec"@fr, "InfoSec"@nl;
+  owl:versionInfo "Draft 2018-03-29".
 
 <http://vocab.belgif.be/shacl/infosec#RateShape> a sh:NodeShape;
   sh:property [
