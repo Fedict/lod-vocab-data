@@ -9,13 +9,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://vocab.belgif.be/shacl/as#> a owl:Ontology;
+<http://vocab.belgif.be/shacl/authsource#> a owl:Ontology;
   rdfs:comment "Authentischen Quellen SHACL rules"@de, "Authentic Sources SHACL rules"@en, 
 		"Sources Authentiques SHACL rules"@fr, "Authentieke bronnen SHACL rules"@nl;
   rdfs:label "AS model"@de, "AS model"@en, "AS model"@fr, "AS model"@nl;
   owl:versionInfo "Draft 2019-02-20 (incomplete)".
 
-<http://vocab.belgif.be/shacl/as#ContactShape> a sh:NodeShape;
+<http://vocab.belgif.be/shacl/authsource#ContactShape> a sh:NodeShape;
   sh:property [
       sh:datatype xsd:string;
       sh:minCount 0;
@@ -33,11 +33,11 @@
     ];
   sh:targetClass schema:ContactPoint.
 
-<http://vocab.belgif.be/shacl/as#FormalFrameworkShape> a sh:NodeShape;
+<http://vocab.belgif.be/shacl/authsource#FormalFrameworkShape> a sh:NodeShape;
   sh:property [
       sh:class foaf:Document;
       sh:minCount 1;
       sh:nodeKind sh:IRI;
       sh:path foaf:page
     ];
-  sh:targetClass cpsv:FormalFramework .
+  sh:targetClass cpsv:FormalFramework.
