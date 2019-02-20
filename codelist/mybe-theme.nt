@@ -7,6 +7,9 @@
 <http://vocab.belgif.be/auth/mybe-theme#id> <http://purl.org/dc/terms/description> "My.belgium.be thema's"@nl .
 <http://vocab.belgif.be/auth/mybe-theme#id> <http://purl.org/dc/terms/description> "My.belgium.be thèmes"@fr .
 <http://vocab.belgif.be/auth/mybe-theme#id> <http://purl.org/dc/terms/description> "My.belgium.be Themas"@de .
+<http://vocab.belgif.be/auth/mybe-theme#id> <http://www.w3.org/2002/07/owl#versionInfo> "Draft version" .
+<http://vocab.belgif.be/auth/mybe-theme#id> <http://purl.org/dc/terms/modified> "2019-02-20T14:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.belgif.be/auth/mybe-theme#id> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
 <http://vocab.belgif.be/auth/mybe-theme/FAMI#id> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/mybe-theme#id> .
 <http://vocab.belgif.be/auth/mybe-theme#id> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/mybe-theme/FAMI#id> .
 <http://vocab.belgif.be/auth/mybe-theme/FAMI#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
