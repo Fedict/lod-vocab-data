@@ -1,4 +1,4 @@
-@prefix cpvv: <http://purl.org/vocab/cpsv#> .
+@prefix cpsv: <http://purl.org/vocab/cpsv#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
