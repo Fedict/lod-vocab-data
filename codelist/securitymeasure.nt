@@ -1,3 +1,4 @@
+<http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://purl.org/dc/terms/description> "Mesures de sécurité"@fr .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://purl.org/dc/terms/title> "Mesures de sécurité"@fr .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://purl.org/dc/terms/description> "Security measures"@en .
@@ -6,7 +7,8 @@
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://purl.org/dc/terms/title> "Sicherheitsmaßnahme"@de .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://purl.org/dc/terms/description> "Veiligheidsmaatregelen"@nl .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://purl.org/dc/terms/title> "Veiligheidsmaatregelen"@nl .
-<http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/2002/07/owl#versionInfo> "Draft version 2019-03-06" .
+<http://vocab.belgif.be/auth/securitymeasure#id> <http://purl.org/dc/terms/license> <http://statbel.fgov.be/en/statistics/opendata/licence/> .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/securitymeasure/01#id> .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/securitymeasure/02#id> .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/securitymeasure/03#id> .
@@ -23,6 +25,7 @@
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/securitymeasure/14#id> .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/securitymeasure/15#id> .
 <http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/securitymeasure/16#id> .
+<http://vocab.belgif.be/auth/securitymeasure#id> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/securitymeasure/99#id> .
 <http://vocab.belgif.be/auth/securitymeasure/01#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://vocab.belgif.be/auth/securitymeasure/01#id> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.belgif.be/auth/securitymeasure#id> .
 <http://vocab.belgif.be/auth/securitymeasure/01#id> <http://www.w3.org/2004/02/skos/core#notation> "01" .
@@ -150,4 +153,12 @@
 <http://vocab.belgif.be/auth/securitymeasure/16#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compliance & Verantwoording"@nl .
 <http://vocab.belgif.be/auth/securitymeasure/16#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compliance und Verantwortlichkeit"@de .
 <http://vocab.belgif.be/auth/securitymeasure/16#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Conformité et responsabilité"@fr .
-<http://vocab.belgif.be/auth/securitymeasure/16#id> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/securitymeasure#id> .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/securitymeasure#id> .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.belgif.be/auth/securitymeasure#id> .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#notation> "99" .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other"@en .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andere"@nl .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andere"@de .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autre"@fr .
+<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/securitymeasure#id> .
