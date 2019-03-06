@@ -153,7 +153,7 @@
 <http://vocab.belgif.be/auth/securitymeasure/16#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compliance & Verantwoording"@nl .
 <http://vocab.belgif.be/auth/securitymeasure/16#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compliance und Verantwortlichkeit"@de .
 <http://vocab.belgif.be/auth/securitymeasure/16#id> <http://www.w3.org/2004/02/skos/core#prefLabel> "Conformité et responsabilité"@fr .
-<http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/securitymeasure#id> .
+<http://vocab.belgif.be/auth/securitymeasure/16#id> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/securitymeasure#id> .
 <http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.belgif.be/auth/securitymeasure#id> .
 <http://vocab.belgif.be/auth/securitymeasure/99#id> <http://www.w3.org/2004/02/skos/core#notation> "99" .
