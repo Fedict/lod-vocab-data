@@ -37,7 +37,7 @@
       sh:class <http://vocab.belgif.be/ns/authsrc#Procedure> ;
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasProcedure> 
-    ]
+    ];
   sh:targetClass <http://vocab.belgif.be/ns/authsrc#Agreement> .
   
 <http://vocab.belgif.be/shacl/authsrc#ContactShape> a sh:NodeShape;
@@ -77,10 +77,15 @@
       sh:nodeKind sh:IRI;
       sh:path dcterms:type;
       sh:property [
-          sh:hasValue <http://vocab.belgif.be/auth/authsrc-element#id>;
+          sh:hasValue <http://vocab.belgif.be/auth/authsrc-element>;
           sh:path skos:inScheme
         ]
-    ]
+    ], [
+	  sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1;
+	  sh:path <http://vocab.belgif.be/ns/authsrc#isAuthoritative>
+	];
   sh:targetClass <http://vocab.belgif.be/ns/autsrc#DataElement> .
     
 <http://vocab.belgif.be/shacl/authsrc#DataSourceShape> a sh:NodeShape;
@@ -96,7 +101,13 @@
       sh:uniqueLang true;
       sh:path dcterms:description
     ], [
-      sh:path dcterms:accrualPeriodicity
+      sh:class skos:Concept;
+      sh:nodeKind sh:IRI;
+      sh:path dcterms:accrualPeriodicity;
+	  sh:property [
+          sh:hasValue <http://publications.europa.eu/resource/authority/frequency>;
+          sh:path skos:inScheme
+        ]
     ], [
       sh:class skos:Concept;
       sh:nodeKind sh:IRI;
@@ -110,14 +121,56 @@
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path dcterms:hasPart
     ], [
+      sh:class skos:Concept;
+      sh:nodeKind sh:IRI;
       sh:maxCount 1;
       sh:minCount 1;
-      sh:path dcterms:accessRights
+      sh:path dcterms:accessRights;
+      sh:property [
+          sh:hasValue <http://vocab.belgif.be/auth/be-theme#id>;
+          sh:path skos:inScheme
+        ]    
     ], [
       sh:class eli:LegalResource;
+      sh:nodeKind sh:IRI;
       sh:path cv:hasLegalResouce
-    ]
+    ], [
+	  sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1;
+	  sh:path <http://vocab.belgif.be/ns/authsrc#isAuthoritative>
+	], [
+      sh:class <http://vocab.belgif.be/ns/authsrc#Agreement>;
+	  sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path <http://vocab.belgif.be/ns/authsrc#hasAgreement>
+    ], [
+      sh:class <http://vocab.belgif.be/ns/authsrc#Procedure>;
+	  sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path <http://vocab.belgif.be/ns/authsrc#hasProcedure>
+    ];
   sh:targetClass <http://vocab.belgif.be/ns/authsrc#DataSource> .
+
+<http://vocab.belgif.be/shacl/authsrc#InitiatorShape> a sh:NodeShape;
+  sh:property [
+      sh:datatype rdf:langString;
+      sh:languageIn ("nl" "fr" "de" "en");
+      sh:uniqueLang true;
+      sh:minCount 1;
+      sh:path dcterms:title
+    ], [
+      sh:class org:Organization;
+      sh:maxCount 1;
+      sh:minCount 0;
+      sh:nodeKind sh:IRI;
+      sh:path org:memberOf
+    ],  [
+      sh:class schema:ContactPoint;
+      sh:maxCount 1;
+      sh:minCount 0;
+      sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path cv:hasContactPoint
+    ];
+  sh:targetClass <http://vocab.belgif.be/ns/authsrc#SourceResponsible> .
 
 <http://vocab.belgif.be/shacl/authsrc#OrganizationShape> a sh:NodeShape;
   sh:property [
@@ -149,10 +202,10 @@
       sh:nodeKind sh:IRI;
       sh:path dcterms:type;
       sh:property [
-          sh:hasValue <http://vocab.belgif.be/auth/authsrc-proc#id>;
+          sh:hasValue <http://vocab.belgif.be/auth/authsrc-proc>;
           sh:path skos:inScheme
         ]
-    ]
+    ];
   sh:targetClass <http://vocab.belgif.be/ns/authsrc#Procedure> .
 
 <http://vocab.belgif.be/shacl/authsrc#SourceResponsibleShape> a sh:NodeShape;
@@ -165,9 +218,9 @@
     ],  [
       sh:class schema:ContactPoint;
       sh:maxCount 1;
-      sh:minCount 1;
+      sh:minCount 0;
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path cv:hasContactPoint
-    ]
+    ];
   sh:targetClass <http://vocab.belgif.be/ns/authsrc#SourceResponsible> .
  

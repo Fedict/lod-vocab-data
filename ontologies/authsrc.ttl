@@ -17,13 +17,14 @@
 
 authsrc:Agreement a rdfs:Class, owl:Class ;
 	rdfs:isDefinedBy authsrc: ;
+	rdfs:subClassOf dcterms:RightsStatement ;
 	rdfs:label "Accord"@fr, "Agreement"@en, "Overeenkomst"@nl, "Vereinbarung"@de ;
 	rdfs:comment "An agreement is a set of statements defining the collaboration between a data provider and one or more data consumers."@en,
 		"Een overeenkomst is een reeks verklaringen die de samenwerking tussen een gegevensprovider en een of meer gegevensgebruikers definiëren."@nl,
 		"Eine Vereinbarung besteht aus einer Reihe von Anweisungen, die die Zusammenarbeit zwischen einem Datenanbieter und einem oder mehreren Datenkonsumenten definieren"@de,
 		"Un accord est un ensemble d'instructions définissant la collaboration entre un fournisseur de données et un ou plusieurs consommateurs de données."@fr .
 
-authsrc:DataElement rdfs:Class, owl:Class ;
+authsrc:DataElement a rdfs:Class, owl:Class ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:label "Data element"@en, "Datenelement"@de, "Gegevenselement"@nl, "Élément de données"@fr ;
 	rdfs:comment "A data element describes a characteristic (property) or a collection of characteristics (class) of an object. A data element can be authoritative or not. Authoritative data elements have a legal base and have to be reused according to the 'only once' legislation."@en,
@@ -33,6 +34,7 @@ authsrc:DataElement rdfs:Class, owl:Class ;
 
 authsrc:DataSource a rdfs:Class, owl:Class ;
 	rdfs:isDefinedBy authsrc: ;
+	rdfs:subClassOf dcat:Dataset ;
 	rdfs:label "Data source"@en, "Datenquelle"@de, "Gegevensbron"@nl "Source de données"@fr ;
 	rdfs:comment "A Data source is a collection of data elements which describe objects. A data source can be authoritative or not. An authoritative data source contains authoritative data and therefore there is a legal obligation to reuse this data source wherever possible."@en,
 		"Een gegevensbron is een verzameling gegevenselementen die objecten beschrijven. Een gegevensbron kan authentiek zijn of niet. Een authentieke gegevensbron bevat authentieke gegevens en daarom is er een wettelijke verplichting om deze gegevensbron waar mogelijk te hergebruiken."@nl,
@@ -48,7 +50,7 @@ authsrc:Initiator a rdfs:Class, owl:Class ;
 		"Ein Initiator initiiert die Daten in einer Datenquelle (zeichnet die Daten auf im Auftrag der für die Datenquelle verantwortlichen Partei)."@de,
 		"Un initiateur initie les données dans une source de données (enregistre les données pour le compte de la partie responsable de la source de données)."@fr .
 
-authsrc:Procedure rdfs:Class, owl:Class ;
+authsrc:Procedure a rdfs:Class, owl:Class ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:label "Procedure"@en, "Procedure"@nl, "Procédure"@fr, "Prozedur"@de ;
 	rdfs:comment "A procedure is a set of rules that need to be followed in a process."@en,
@@ -63,13 +65,6 @@ authsrc:SourceResponsible a rdfs:Class, owl:Class ;
 		"Responsible for the data source. This party is an organization to which is attached an optional contactperson for the data source."@en,
 		"Verantwoordelijke voor de gegevensbron. Deze partij is een organisatie waaraan een optionele contactpersoon voor de gegevensbron is gekoppeld."@nl,
 		"Verantwortlicher für die Datenquelle. Diese Partei ist eine Organisation, der ein optionaler Kontaktperson für die Datenquelle beigefügt ist."@de .
-	
-gdpr:isDPOInternal a rdf:Property, owl:DataProperty ;
-	rdfs:isDefinedBy gdpr: ;
-	rdfs:label "DPO interne"@fr, "Internal DPO"@en, "Interne DPO"@nl, "Interner DPO"@de ;
-	rdfs:comment "DPO appartient au personnel de l'organisation du contrôleur ou non."@fr, "DPO behoort tot het personeel van de Controller-organisatie of niet."@nl, "DPO belongs to the staff of the Controller organization or not."@en, "DPO gehört dem Personal der Controller-Organisation oder nicht."@de ;
-	rdfs:domain gdpr:Controller ;
-	rdfs:range xsd:boolean .
 
 authsrc:hasAgreement a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
@@ -82,3 +77,10 @@ authsrc:hasProcedure a rdf:Property, owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:relation ;
 	rdfs:label "A procédure"@fr, "Has procedure"@en, "Hat Prozedur"@de, "Heeft procedure"@nl ;
 	rdfs:range authsrc:Procedure .
+
+authsrc:isAuthoritative a rdf:Property, owl:DataProperty ;
+	rdfs:isDefinedBy authsrc: ;
+	rdfs:label "Est authentique"@fr, "Is authentiek"@nl, "Is authoritative"@en, "Ist authentisch"@de ;	
+	rdfs:comment "Indicateur si quelque chose est authentique ou non."@fr, "Indicator of iets authentiek is of niet."@nl,
+		"Indicator whether something is authoritative or not."@en, "Indikator, ob etwas authentisch ist oder nicht."@de ;
+	rdfs:range xsd:boolean .
