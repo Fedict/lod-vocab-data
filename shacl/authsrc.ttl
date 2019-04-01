@@ -63,6 +63,7 @@
       sh:datatype rdf:langString;
       sh:languageIn ("nl" "fr" "de" "en");
       sh:uniqueLang true;
+      sh:minCount 1;
       sh:path dcterms:title
     ], [
       sh:datatype rdf:langString;
@@ -87,6 +88,7 @@
       sh:datatype rdf:langString;
       sh:languageIn ("nl" "fr" "de" "en");
       sh:uniqueLang true;
+      sh:minCount 1;
       sh:path dcterms:title
     ], [
       sh:datatype rdf:langString;
@@ -133,6 +135,7 @@
       sh:datatype rdf:langString;
       sh:languageIn ("nl" "fr" "de" "en");
       sh:uniqueLang true;
+      sh:minCount 1;
       sh:path dcterms:title
     ], [
       sh:datatype rdf:langString;
