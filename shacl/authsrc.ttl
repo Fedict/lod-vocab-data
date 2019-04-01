@@ -32,10 +32,6 @@
       sh:uniqueLang true;
       sh:path dcterms:description
     ], [
-      sh:class schema:ContactPoint;
-      sh:nodeKind sh:BlankNodeOrIRI;
-      sh:path cv:hasContactPoint
-    ], [
       sh:class <http://vocab.belgif.be/ns/authsrc#Procedure> ;
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasProcedure> 
@@ -149,7 +145,7 @@
         ]    
     ], [
       sh:nodeKind sh:IRI;
-      sh:path foaf:page;
+      sh:path foaf:page
     ], [
       sh:class eli:LegalResource;
       sh:nodeKind sh:IRI;
@@ -163,6 +159,10 @@
       sh:class <http://vocab.belgif.be/ns/authsrc#Agreement>;
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasAgreement>
+    ], [
+      sh:class <http://vocab.belgif.be/ns/authsrc#Initiator;
+      sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path <http://vocab.belgif.be/ns/authsrc#hasInitiator>
     ], [
       sh:class <http://vocab.belgif.be/ns/authsrc#Procedure>;
       sh:nodeKind sh:BlankNodeOrIRI;
@@ -190,7 +190,7 @@
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path cv:hasContactPoint
     ];
-  sh:targetClass <http://vocab.belgif.be/ns/authsrc#SourceResponsible> .
+  sh:targetClass <http://vocab.belgif.be/ns/authsrc#Initiator> .
 
 <http://vocab.belgif.be/shacl/authsrc#OrganizationShape> a sh:NodeShape;
   sh:property [

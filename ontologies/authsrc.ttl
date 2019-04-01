@@ -35,12 +35,11 @@ authsrc:DataElement a rdfs:Class, owl:Class ;
 authsrc:DataSource a rdfs:Class, owl:Class ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:subClassOf dcat:Dataset ;
-	rdfs:label "Data source"@en, "Datenquelle"@de, "Gegevensbron"@nl "Source de données"@fr ;
+	rdfs:label "Data source"@en, "Datenquelle"@de, "Gegevensbron"@nl, "Source de données"@fr ;
 	rdfs:comment "A Data source is a collection of data elements which describe objects. A data source can be authoritative or not. An authoritative data source contains authoritative data and therefore there is a legal obligation to reuse this data source wherever possible."@en,
 		"Een gegevensbron is een verzameling gegevenselementen die objecten beschrijven. Een gegevensbron kan authentiek zijn of niet. Een authentieke gegevensbron bevat authentieke gegevens en daarom is er een wettelijke verplichting om deze gegevensbron waar mogelijk te hergebruiken."@nl,
 		"Eine Datenquelle ist eine Sammlung von Datenelementen, die Objekte beschreiben. Eine Datenquelle kann authentisch sein oder nicht. Eine authentische Datenquelle enthält authentische Daten und daher besteht eine gesetzliche Verpflichtung, diese Datenquelle wo immer möglich zu verwenden."@de,
-		"Une source de données est une collection d'éléments de données qui décrivent des objets. Une source de données peut être authentique ou non. Une source de données authentique contient des données authentiques et, par conséquent, il existe une obligation légale de réutiliser cette source de données dans la mesure du possible."@fr ;
-	rdfs:label "Data source"@en, "Datenquelle"@de, "Gegevensbron"@nl "Source de données"@fr .
+		"Une source de données est une collection d'éléments de données qui décrivent des objets. Une source de données peut être authentique ou non. Une source de données authentique contient des données authentiques et, par conséquent, il existe une obligation légale de réutiliser cette source de données dans la mesure du possible."@fr  .
 
 authsrc:Initiator a rdfs:Class, owl:Class ;
 	rdfs:isDefinedBy authsrc: ;
@@ -78,6 +77,12 @@ authsrc:hasConsumer a rdf:Property, owl:ObjectProperty ;
 	rdfs:label "a consommateur"@fr, "has consumer"@en, "hat Verbraucher"@de, "heeft consumer"@nl ;
 	rdfs:range authsrc:Agreement .
 
+authsrc:hasConsumer a rdf:Property, owl:ObjectProperty ;
+	rdfs:isDefinedBy authsrc: ;
+	rdfs:subPropertyOf dcterms:relation ;
+	rdfs:label "A initiateur"@fr, "Has initiator"@en, "Hat Initiator"@de, "Heeft initiator"@nl ;
+	rdfs:range authsrc:Initiator .
+	
 authsrc:hasProcedure a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:subPropertyOf dcterms:relation ;
@@ -87,7 +92,7 @@ authsrc:hasProcedure a rdf:Property, owl:ObjectProperty ;
 authsrc:hasProvider a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:subPropertyOf dcterms:relation ;
-	rdfs:label "a un fournisseur"@fr, "has provider"@en, "hat Anbieter"@de, "heeft provider"@nl .
+	rdfs:label "a un fournisseur"@fr, "has provider"@en, "hat Anbieter"@de, "heeft provider"@nl ;
 	rdfs:comment "Can be different than the responsible party (e.g. a service integrator)"@en,
 		"Kan verschillen van de verantwoordelijke partij (bijvoorbeeld een service-integrator)"@nl,
 		"Kann anders sein als die verantwortliche Partei (z. B. ein Service-Integrator)"@de,
