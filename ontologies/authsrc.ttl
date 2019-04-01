@@ -72,11 +72,33 @@ authsrc:hasAgreement a rdf:Property, owl:ObjectProperty ;
 	rdfs:label "A accord"@fr, "Has agreement"@en, "Hat Vereinbarung"@de, "Heeft overeenkomst"@nl ;
 	rdfs:range authsrc:Agreement .
 
+authsrc:hasConsumer a rdf:Property, owl:ObjectProperty ;
+	rdfs:isDefinedBy authsrc: ;
+	rdfs:subPropertyOf dcterms:relation ;
+	rdfs:label "a consommateur"@fr, "has consumer"@en, "hat Verbraucher"@de, "heeft consumer"@nl ;
+	rdfs:range authsrc:Agreement .
+
 authsrc:hasProcedure a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:subPropertyOf dcterms:relation ;
 	rdfs:label "A procédure"@fr, "Has procedure"@en, "Hat Prozedur"@de, "Heeft procedure"@nl ;
 	rdfs:range authsrc:Procedure .
+
+authsrc:hasProvider a rdf:Property, owl:ObjectProperty ;
+	rdfs:isDefinedBy authsrc: ;
+	rdfs:subPropertyOf dcterms:relation ;
+	rdfs:label "a un fournisseur"@fr, "has provider"@en, "hat Anbieter"@de, "heeft provider"@nl .
+	rdfs:comment "Can be different than the responsible party (e.g. a service integrator)"@en,
+		"Kan verschillen van de verantwoordelijke partij (bijvoorbeeld een service-integrator)"@nl,
+		"Kann anders sein als die verantwortliche Partei (z. B. ein Service-Integrator)"@de,
+		"Peut être différent de la partie responsable (par exemple un intégrateur de services)"@fr ;
+	rdfs:range authsrc:Agreement .
+
+authsrc:hasSource a rdf:Property, owl:ObjectProperty ;
+	rdfs:isDefinedBy authsrc: ;
+	rdfs:subPropertyOf dcterms:relation ;
+	rdfs:label "A source"@fr, "Has source"@en, "Hat Quelle"@de, "Heeft bron"@nl ;
+	rdfs:range authsrc:DataSource .
 
 authsrc:isAuthoritative a rdf:Property, owl:DataProperty ;
 	rdfs:isDefinedBy authsrc: ;
