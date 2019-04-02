@@ -101,6 +101,11 @@ authsrc:hasProvider a rdf:Property, owl:ObjectProperty ;
 
 authsrc:hasSource a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
+	rdfs:label "A responsable"@fr, "Has responsible"@en, "Hat verantwortliche Partei"@de, "Heeft verantwoordelijke"@nl ;
+	rdfs:range authsrc:SourceResponsible .
+
+authsrc:hasSource a rdf:Property, owl:ObjectProperty ;
+	rdfs:isDefinedBy authsrc: ;
 	rdfs:subPropertyOf dcterms:relation ;
 	rdfs:label "A source"@fr, "Has source"@en, "Hat Quelle"@de, "Heeft bron"@nl ;
 	rdfs:range authsrc:DataSource .

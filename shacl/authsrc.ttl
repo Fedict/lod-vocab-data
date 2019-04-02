@@ -53,7 +53,7 @@
     ];
   sh:targetClass <http://vocab.belgif.be/ns/authsrc#Agreement> .
   
-<http://vocab.belgif.be/shacl/authsrc#ContactShape> a sh:NodeShape;
+<http://vocab.belgif.be/shacl/authsrc#ContactPointShape> a sh:NodeShape;
   sh:property [
       sh:datatype xsd:string;
       sh:minCount 0;
@@ -68,6 +68,11 @@
       sh:maxCount 1;
       sh:minCount 0;
       sh:path schema:telephone
+    ], [
+      sh:class org:Organization;
+      sh:nodeKind sh:IRI;
+      sh:maxCount 1;
+      sh:path org:memberOf
     ];
   sh:targetClass schema:ContactPoint.
 
@@ -167,6 +172,10 @@
       sh:class <http://vocab.belgif.be/ns/authsrc#Procedure>;
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasProcedure>
+    ], [
+      sh:class <http://vocab.belgif.be/ns/authsrc#SourceResponsible>;
+      sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path <http://vocab.belgif.be/ns/authsrc#hasResponsible>
     ];
   sh:targetClass <http://vocab.belgif.be/ns/authsrc#DataSource> .
 
