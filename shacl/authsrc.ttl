@@ -160,7 +160,7 @@
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasAgreement>
     ], [
-      sh:class <http://vocab.belgif.be/ns/authsrc#Initiator;
+      sh:class <http://vocab.belgif.be/ns/authsrc#Initiator>;
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasInitiator>
     ], [
