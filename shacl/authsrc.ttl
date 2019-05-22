@@ -16,7 +16,7 @@
   rdfs:comment "Authentischen Quellen SHACL rules"@de, "Authentic Sources SHACL rules"@en, 
         "Sources Authentiques SHACL rules"@fr, "Authentieke bronnen SHACL rules"@nl;
   rdfs:label "AS model"@de, "AS model"@en, "AS model"@fr, "AS model"@nl;
-  owl:versionInfo "Draft 2019-04-01".
+  owl:versionInfo "Draft 2019-05-22".
 
 
 <http://vocab.belgif.be/shacl/authsrc#AgreementShape> a sh:NodeShape;
@@ -78,6 +78,11 @@
 
 <http://vocab.belgif.be/shacl/authsrc#DataElementShape> a sh:NodeShape;
     sh:property [
+      sh:datatype rdfs:Literal;
+	  sh:minCount 1;
+      sh:maxCount 1;
+      sh:path dcterms:identifier
+    ], [
       sh:datatype rdf:langString;
       sh:languageIn ("nl" "fr" "de" "en");
       sh:uniqueLang true;
@@ -108,6 +113,11 @@
     
 <http://vocab.belgif.be/shacl/authsrc#DataSourceShape> a sh:NodeShape;
   sh:property [
+      sh:datatype rdfs:Literal;
+	  sh:minCount 1;
+      sh:maxCount 1;
+      sh:path dcterms:identifier
+    ], [
       sh:datatype rdf:langString;
       sh:languageIn ("nl" "fr" "de" "en");
       sh:uniqueLang true;
@@ -119,9 +129,21 @@
       sh:uniqueLang true;
       sh:path dcterms:description
     ], [
+      sh:datatype xsd:date;
+      sh:lessThanOrEquals schema:endDate;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:path schema:startDate
+    ], [
+      sh:datatype xsd:date;
+      sh:maxCount 1;
+      sh:path schema:endDate
+    ], [
       sh:class skos:Concept;
       sh:nodeKind sh:IRI;
       sh:path dcterms:accrualPeriodicity;
+      sh:minCount 1;
+	  sh:maxCount 1;
       sh:property [
           sh:hasValue <http://publications.europa.eu/resource/authority/frequency>;
           sh:path skos:inScheme
