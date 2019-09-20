@@ -16,7 +16,7 @@
   rdfs:comment "Authentischen Quellen SHACL rules"@de, "Authentic Sources SHACL rules"@en, 
         "Sources Authentiques SHACL rules"@fr, "Authentieke bronnen SHACL rules"@nl;
   rdfs:label "AS model"@de, "AS model"@en, "AS model"@fr, "AS model"@nl;
-  owl:versionInfo "Draft 2019-05-22".
+  owl:versionInfo "Draft 2019-09-21".
 
 
 <http://vocab.belgif.be/shacl/authsrc#AgreementShape> a sh:NodeShape;
@@ -176,7 +176,7 @@
     ], [
       sh:class eli:LegalResource;
       sh:nodeKind sh:IRI;
-      sh:path cv:hasLegalResouce
+      sh:path cv:hasLegalResource
     ], [
       sh:datatype xsd:boolean;
       sh:maxCount 1;
