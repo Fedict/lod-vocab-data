@@ -10,7 +10,7 @@
 @prefix authsrc: <http://vocab.belgif.be/ns/authsrc#> .
 
 <http://vocab.belgif.be/ns/authsrc#> a owl:Ontology ;
-	owl:versionInfo "Draft 2019-04-01" ;
+	owl:versionInfo "Draft 2019-09-21" ;
 	rdfs:label "AS"@de, "AS"@en, "AS"@fr, "AS"@nl ;
 	rdfs:comment "Authentischen Quellen"@de, "Authentic Sources"@en, 
 		"Sources Authentiques"@fr, "Authentieke bronnen"@nl .
@@ -75,9 +75,9 @@ authsrc:hasConsumer a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:subPropertyOf dcterms:relation ;
 	rdfs:label "a consommateur"@fr, "has consumer"@en, "hat Verbraucher"@de, "heeft consumer"@nl ;
-	rdfs:range authsrc:Agreement .
+	rdfs:domain authsrc:Agreement .
 
-authsrc:hasConsumer a rdf:Property, owl:ObjectProperty ;
+authsrc:hasInitiator a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:subPropertyOf dcterms:relation ;
 	rdfs:label "A initiateur"@fr, "Has initiator"@en, "Hat Initiator"@de, "Heeft initiator"@nl ;
@@ -97,7 +97,7 @@ authsrc:hasProvider a rdf:Property, owl:ObjectProperty ;
 		"Kan verschillen van de verantwoordelijke partij (bijvoorbeeld een service-integrator)"@nl,
 		"Kann anders sein als die verantwortliche Partei (z. B. ein Service-Integrator)"@de,
 		"Peut être différent de la partie responsable (par exemple un intégrateur de services)"@fr ;
-	rdfs:range authsrc:Agreement .
+	rdfs:domain authsrc:Agreement .
 
 authsrc:hasResponsible a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
