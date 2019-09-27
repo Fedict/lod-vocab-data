@@ -168,7 +168,7 @@
       sh:nodeKind sh:IRI;
       sh:path dcterms:accrualPeriodicity;
       sh:minCount 1;
-	  sh:maxCount 1;
+      sh:maxCount 1;
       sh:property [
           sh:hasValue <http://publications.europa.eu/resource/authority/frequency>;
           sh:path skos:inScheme
@@ -222,6 +222,8 @@
     ], [
       sh:class <http://vocab.belgif.be/ns/authsrc#SourceResponsible>;
       sh:nodeKind sh:BlankNodeOrIRI;
+      sh:maxCount 1;
+      sh:minCount 1;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasResponsible>
     ];
   sh:targetClass <http://vocab.belgif.be/ns/authsrc#DataSource> .
