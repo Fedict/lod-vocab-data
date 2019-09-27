@@ -10,7 +10,7 @@
 @prefix authsrc: <http://vocab.belgif.be/ns/authsrc#> .
 
 <http://vocab.belgif.be/ns/authsrc#> a owl:Ontology ;
-	owl:versionInfo "Draft 2019-09-21" ;
+	owl:versionInfo "Draft 2019-09-27" ;
 	rdfs:label "AS"@de, "AS"@en, "AS"@fr, "AS"@nl ;
 	rdfs:comment "Authentischen Quellen"@de, "Authentic Sources"@en, 
 		"Sources Authentiques"@fr, "Authentieke bronnen"@nl .
@@ -23,6 +23,10 @@ authsrc:Agreement a rdfs:Class, owl:Class ;
 		"Een overeenkomst is een reeks verklaringen die de samenwerking tussen een gegevensprovider en een of meer gegevensgebruikers definiëren."@nl,
 		"Eine Vereinbarung besteht aus einer Reihe von Anweisungen, die die Zusammenarbeit zwischen einem Datenanbieter und einem oder mehreren Datenkonsumenten definieren"@de,
 		"Un accord est un ensemble d'instructions définissant la collaboration entre un fournisseur de données et un ou plusieurs consommateurs de données."@fr .
+
+authsrc:Consumer a rdfs:Class, owl:Class ;
+	rdfs:isDefinedBy authsrc: ;
+	rdfs:label "Consumer"@en, "Benutzer"@de, "Gebruiker"@nl, "Consommateur"@fr .
 
 authsrc:DataElement a rdfs:Class, owl:Class ;
 	rdfs:isDefinedBy authsrc: ;
@@ -56,7 +60,11 @@ authsrc:Procedure a rdfs:Class, owl:Class ;
 		"Een procedure is een verzameling van regels die moet worden gevolgd in een proces."@nl,
 		"Eine Prozedur ist eine Reihe von Regeln, die in einem Prozess befolgt werden müssen."@de,
 		"Une procédure est un ensemble de règles qui doivent être suivies dans un processus."@fr .
-	
+
+authsrc:Provider a rdfs:Class, owl:Class ;
+	rdfs:isDefinedBy authsrc: ;
+	rdfs:label "Provider"@en, "Anbieter"@de, "Aanbieder"@nl, "Fournisseur"@fr .
+
 authsrc:SourceResponsible a rdfs:Class, owl:Class ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:label "Responsable de la source de données"@fr, "Responsible for the data source"@en, "Verantwoordelijke voor de gegevensbron"@nl, "Verantwortlicher für die Datenquelle"@de;
