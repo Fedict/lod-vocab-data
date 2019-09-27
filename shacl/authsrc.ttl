@@ -16,7 +16,7 @@
   rdfs:comment "Authentischen Quellen SHACL rules"@de, "Authentic Sources SHACL rules"@en, 
         "Sources Authentiques SHACL rules"@fr, "Authentieke bronnen SHACL rules"@nl;
   rdfs:label "AS model"@de, "AS model"@en, "AS model"@fr, "AS model"@nl;
-  owl:versionInfo "Draft 2019-09-21".
+  owl:versionInfo "Draft 2019-09-27".
 
 
 <http://vocab.belgif.be/shacl/authsrc#AgreementShape> a sh:NodeShape;
@@ -36,12 +36,12 @@
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasProcedure> 
     ], [
-      sh:class org:Organization;
+      sh:class <http://vocab.belgif.be/ns/authsrc#Consumer>;
       sh:nodeKind sh:IRI;
       sh:minCount 1;
       sh:path <http://vocab.belgif.be/ns/authsrc#hasConsumer>
     ], [
-      sh:class org:Organization;
+      sh:class <http://vocab.belgif.be/ns/authsrc#Provider>;
       sh:nodeKind sh:IRI;
       sh:maxCount 1;
       sh:minCount 1;
@@ -76,6 +76,22 @@
     ];
   sh:targetClass schema:ContactPoint.
 
+<http://vocab.belgif.be/shacl/authsrc#ConsumerShape> a sh:NodeShape;
+  sh:property [
+      sh:class org:Organization;
+      sh:maxCount 1;
+      sh:minCount 0;
+      sh:nodeKind sh:IRI;
+      sh:path org:memberOf
+    ],  [
+      sh:class schema:ContactPoint;
+      sh:maxCount 1;
+      sh:minCount 0;
+      sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path cv:hasContactPoint
+    ];
+  sh:targetClass <http://vocab.belgif.be/ns/authsrc#Consumer> .
+
 <http://vocab.belgif.be/shacl/authsrc#DataElementShape> a sh:NodeShape;
     sh:property [
       sh:datatype rdfs:Literal;
@@ -93,6 +109,15 @@
       sh:languageIn ("nl" "fr" "de" "en");
       sh:uniqueLang true;
       sh:path dcterms:description
+    ], [
+      sh:datatype xsd:date;
+      sh:lessThanOrEquals schema:endDate;
+      sh:maxCount 1;
+      sh:path schema:startDate
+    ], [
+      sh:datatype xsd:date;
+      sh:maxCount 1;
+      sh:path schema:endDate
     ], [
       sh:class skos:Concept;
       sh:maxCount 1;
@@ -258,6 +283,22 @@
         ]
     ];
   sh:targetClass <http://vocab.belgif.be/ns/authsrc#Procedure> .
+
+<http://vocab.belgif.be/shacl/authsrc#ProviderShape> a sh:NodeShape;
+  sh:property [
+      sh:class org:Organization;
+      sh:maxCount 1;
+      sh:minCount 0;
+      sh:nodeKind sh:IRI;
+      sh:path org:memberOf
+    ],  [
+      sh:class schema:ContactPoint;
+      sh:maxCount 1;
+      sh:minCount 0;
+      sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path cv:hasContactPoint
+    ];
+  sh:targetClass <http://vocab.belgif.be/ns/authsrc#Provider> .
 
 <http://vocab.belgif.be/shacl/authsrc#SourceResponsibleShape> a sh:NodeShape;
   sh:property [
