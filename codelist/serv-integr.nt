@@ -2,7 +2,7 @@
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/description> "Belgische dienstenintegratoren"@nl .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/description> "Int\u00E9grateurs des services belges"@fr .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/description> "Service-Integratoren"@de .
-<http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/modified> "2019-07-16T13:03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/modified> "2019-10-14T12:57:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/title> "Dienstenintegratoren"@nl .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/title> "Int\u00E9grateurs des services"@fr .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/title> "Service integrators"@en .
@@ -46,7 +46,7 @@
 <http://vocab.belgif.be/auth/serv-integr/CBSS> <http://www.w3.org/2004/02/skos/core#altLabel> "KSZ"@nl .
 <http://vocab.belgif.be/auth/serv-integr/CBSS> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.belgif.be/auth/serv-integr> .
 <http://vocab.belgif.be/auth/serv-integr/CBSS> <http://www.w3.org/2004/02/skos/core#notation> "CBSS" .
-<http://vocab.belgif.be/auth/serv-integr/CBSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Banque Carrefour d'Echange de Donn\u00E9es"@nl .
+<http://vocab.belgif.be/auth/serv-integr/CBSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kruispuntbank van de Sociale Zekerheid"@nl .
 <http://vocab.belgif.be/auth/serv-integr/CBSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Banque Carrefour de la S\u00E9curit\u00E9 Sociale"@fr .
 <http://vocab.belgif.be/auth/serv-integr/CBSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Crossroads Bank for Social Security"@en .
 <http://vocab.belgif.be/auth/serv-integr/CBSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kreuzungsbank f\u00FCr soziale Sicherheit"@de .
