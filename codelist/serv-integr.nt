@@ -87,11 +87,20 @@
 <http://vocab.belgif.be/auth/serv-integr/VDI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vlaamse Dienstenintegrator"@fr .
 <http://vocab.belgif.be/auth/serv-integr/VDI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vlaamse Dienstenintegrator"@nl .
 <http://vocab.belgif.be/auth/serv-integr/VDI> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/serv-integr> .
+<http://vocab.belgif.be/auth/serv-integr/OTHER> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/serv-integr> .
+<http://vocab.belgif.be/auth/serv-integr> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/serv-integr/OTHER> .
+<http://vocab.belgif.be/auth/serv-integr/OTHER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.belgif.be/auth/serv-integr/OTHER> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.belgif.be/auth/serv-integr> .
+<http://vocab.belgif.be/auth/serv-integr/OTHER> <http://www.w3.org/2004/02/skos/core#notation> "OTHER" .
+<http://vocab.belgif.be/auth/serv-integr/OTHER> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andere"@nl .
+<http://vocab.belgif.be/auth/serv-integr/OTHER> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autre"@fr .
+<http://vocab.belgif.be/auth/serv-integr/OTHER> <http://www.w3.org/2004/02/skos/core#prefLabel> "Anderes"@de .
+<http://vocab.belgif.be/auth/serv-integr/OTHER> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other"@en .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/description> "Belgian Service Integrators"@en .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/description> "Belgische dienstenintegratoren"@nl .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/description> "Int\u00E9grateurs des services belges"@fr .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/description> "Service-Integratoren"@de .
-<http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/modified> "2019-07-06T11:40:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/modified> "2019-10-16T12:40:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/title> "Dienstenintegratoren"@nl .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/title> "Int\u00E9grateurs des services"@fr .
 <http://vocab.belgif.be/auth/serv-integr> <http://purl.org/dc/terms/title> "Service integrators"@en .
