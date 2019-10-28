@@ -16,7 +16,7 @@
   rdfs:comment "Authentischen Quellen SHACL rules"@de, "Authentic Sources SHACL rules"@en, 
         "Sources Authentiques SHACL rules"@fr, "Authentieke bronnen SHACL rules"@nl;
   rdfs:label "AS model"@de, "AS model"@en, "AS model"@fr, "AS model"@nl;
-  owl:versionInfo "Draft 2019-09-27".
+  owl:versionInfo "Draft 2019-10-28".
 
 
 <http://vocab.belgif.be/shacl/authsrc#AgreementShape> a sh:NodeShape;
@@ -179,6 +179,16 @@
       sh:path dcat:theme;
       sh:property [
           sh:hasValue <http://vocab.belgif.be/auth/be-theme#id>;
+          sh:path skos:inScheme
+        ]
+    ], [
+      sh:class skos:Concept;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:path <http://vocab.belgif.be/ns/authsrc#hasIntegrator>;
+      sh:property [
+          sh:hasValue <http://vocab.belgif.be/auth/serv-integr>;
           sh:path skos:inScheme
         ]
     ], [

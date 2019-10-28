@@ -10,7 +10,7 @@
 @prefix authsrc: <http://vocab.belgif.be/ns/authsrc#> .
 
 <http://vocab.belgif.be/ns/authsrc#> a owl:Ontology ;
-	owl:versionInfo "Draft 2019-09-27" ;
+	owl:versionInfo "Draft 2019-10-28" ;
 	rdfs:label "AS"@de, "AS"@en, "AS"@fr, "AS"@nl ;
 	rdfs:comment "Authentischen Quellen"@de, "Authentic Sources"@en, 
 		"Sources Authentiques"@fr, "Authentieke bronnen"@nl .
@@ -90,11 +90,18 @@ authsrc:hasInitiator a rdf:Property, owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:relation ;
 	rdfs:label "A initiateur"@fr, "Has initiator"@en, "Hat Initiator"@de, "Heeft initiator"@nl ;
 	rdfs:range authsrc:Initiator .
+
+authsrc:hasIntegrator a rdf:Property, owl:ObjectProperty ;
+	rdfs:isDefinedBy authsrc: ;
+	rdfs:subPropertyOf dcterms:relation ;
+	rdfs:label "A intégrateur"@fr, "Has integrator"@en, "Hat Integrator"@de, "Heeft integrator"@nl ;
+	rdfs:domain authsrc:DataSource .
 	
 authsrc:hasProcedure a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
 	rdfs:subPropertyOf dcterms:relation ;
 	rdfs:label "A procédure"@fr, "Has procedure"@en, "Hat Prozedur"@de, "Heeft procedure"@nl ;
+	rdfs:domain authsrc:Agreement ;
 	rdfs:range authsrc:Procedure .
 
 authsrc:hasProvider a rdf:Property, owl:ObjectProperty ;
@@ -105,11 +112,14 @@ authsrc:hasProvider a rdf:Property, owl:ObjectProperty ;
 		"Kan verschillen van de verantwoordelijke partij (bijvoorbeeld een service-integrator)"@nl,
 		"Kann anders sein als die verantwortliche Partei (z. B. ein Service-Integrator)"@de,
 		"Peut être différent de la partie responsable (par exemple un intégrateur de services)"@fr ;
-	rdfs:domain authsrc:Agreement .
+	rdfs:domain authsrc:Agreement ;
+	rdfs:range authsrc:Provider .
 
 authsrc:hasResponsible a rdf:Property, owl:ObjectProperty ;
 	rdfs:isDefinedBy authsrc: ;
+	rdfs:subPropertyOf dcterms:relation ;
 	rdfs:label "A responsable"@fr, "Has responsible"@en, "Hat verantwortliche Partei"@de, "Heeft verantwoordelijke"@nl ;
+	rdfs:domain authsrc:DataSource ;
 	rdfs:range authsrc:SourceResponsible .
 
 authsrc:hasSource a rdf:Property, owl:ObjectProperty ;
