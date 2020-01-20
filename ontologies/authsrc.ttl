@@ -1,16 +1,13 @@
-@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix schema: <http://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix authsrc: <http://vocab.belgif.be/ns/authsrc#> .
 
 <http://vocab.belgif.be/ns/authsrc#> a owl:Ontology ;
-	owl:versionInfo "Draft 2019-10-28" ;
+	owl:versionInfo "Draft 2020-01-20" ;
 	rdfs:label "AS"@de, "AS"@en, "AS"@fr, "AS"@nl ;
 	rdfs:comment "Authentischen Quellen"@de, "Authentic Sources"@en, 
 		"Sources Authentiques"@fr, "Authentieke bronnen"@nl .
