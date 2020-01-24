@@ -488,7 +488,7 @@
 
 <http://vocab.belgif.be/shacl/gdpr#OrganizationShape> a sh:NodeShape;
   sh:property [
-      sh:datatype rdfs:Literal;
+      sh:datatype xsd:string;
       sh:path skos:altLabel
     ], [
       sh:datatype xsd:string;

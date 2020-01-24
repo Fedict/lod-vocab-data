@@ -2,6 +2,7 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -15,11 +16,16 @@
   rdfs:comment "Kontrakten SHACL rules"@de, "Contracts SHACL rules"@en, 
         "Contrats SHACL rules"@fr, "Contracten SHACL rules"@nl;
   rdfs:label "Kontrakt model"@de, "Contract model"@en, "Contrat model"@fr, "Contract model"@nl;
-  owl:versionInfo "Draft 2020-01-20" .
+  owl:versionInfo "Draft 2020-01-24" .
 
 
 <http://vocab.belgif.be/shacl/contract#ContractShape> a sh:NodeShape;
     sh:property [
+      sh:datatype xsd:string;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:path dcterms:identifier
+    ], [
       sh:datatype rdf:langString;
       sh:languageIn ("nl" "fr" "de" "en");
       sh:minCount 1;
@@ -28,6 +34,7 @@
     ], [
       sh:datatype rdf:langString;
       sh:languageIn ("nl" "fr" "de" "en");
+	  sh:minCount 1;
       sh:uniqueLang true;
       sh:path dcterms:description
 	], [
@@ -40,10 +47,14 @@
 	  sh:path dcterms:isReplacedBy
 	], [
       sh:nodeKind sh:IRI;
-      sh:maxCount 0;
-      sh:minCount 1;
+      sh:maxCount 1;
       sh:path dcat:accesURL
-	],[
+	], [
+	  sh:class dcterms:Location;
+	  sh:nodeKind sh:IRI;
+      sh:maxCount 1;
+      sh:path locn:location
+	], [
       sh:datatype xsd:date;
       sh:lessThanOrEquals schema:endDate;
 	  sh:minCount 1;
@@ -73,13 +84,16 @@
           sh:hasValue <http://publications.europa.eu/resource/authority/access-right>;
           sh:path skos:inScheme
         ]    
+    ], [
+      sh:class schema:ContactPoint;
+      sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path cv:hasContactPoint
     ];
   sh:targetClass <http://vocab.belgif.be/ns/contract#Contract> .
   
 <http://vocab.belgif.be/shacl/contract#ContactPointShape> a sh:NodeShape;
   sh:property [
       sh:datatype xsd:string;
-      sh:minCount 0;
       sh:path schema:name
     ], [
       sh:datatype xsd:string;
@@ -89,7 +103,6 @@
     ], [
       sh:datatype xsd:string;
       sh:maxCount 1;
-      sh:minCount 0;
       sh:path schema:telephone
     ], [
       sh:class org:Organization;
@@ -109,3 +122,18 @@
       sh:path skos:notation
     ];
   sh:targetClass org:Organization .
+
+<http://vocab.belgif.be/shacl/contract#LocationShape> a sh:NodeShape;
+  sh:property [
+      sh:datatype rdf:langString;
+      sh:languageIn ("nl" "fr" "de" "en");
+      sh:minCount 1;
+      sh:uniqueLang true;
+      sh:path locn:geographicName
+    ], [
+      sh:class locn:Address;
+      sh:nodeKind sh:IRI;
+      sh:maxCount 1;
+      sh:path locn:address
+    ];
+  sh:targetClass dcterms:Location .

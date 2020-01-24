@@ -9,7 +9,7 @@
   rdfs:comment "BeST/INSPIRE SHACL rules"@en, "BeST/INSPIRE SHACL rules"@fr,
     "BeST/INSPIRE SHACL rules"@nl, "BeST/INSPIRE SHACL rules"@de;
   rdfs:label "BeST/INSPIRE"@de, "BeST/INSPIRE"@en, "BeST/INSPIRE"@fr, "BeST/INSPIRE"@nl;
-  owl:versionInfo "Incomplete Draft 2019-01-31".
+  owl:versionInfo "Incomplete Draft 2020-01-24".
 
 <http://vocab.belgif.be/shacl/inspire#AddressRepresentationShape> a sh:NodeShape;
   sh:property [
@@ -24,7 +24,7 @@
       sh:uniqueLang true;
       sh:path locn:thoroughfare
     ], [
-      sh:datatype rdfs:Literal;
+      sh:datatype xsd:string;
       sh:path locn:locatorDesignator
     ], [
       sh:datatype rdfs:Literal;
