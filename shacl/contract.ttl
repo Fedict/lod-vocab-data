@@ -16,7 +16,7 @@
   rdfs:comment "Kontrakten SHACL rules"@de, "Contracts SHACL rules"@en, 
         "Contrats SHACL rules"@fr, "Contracten SHACL rules"@nl;
   rdfs:label "Kontrakt model"@de, "Contract model"@en, "Contrat model"@fr, "Contract model"@nl;
-  owl:versionInfo "Draft 2020-01-24" .
+  owl:versionInfo "Draft 2020-02-05" .
 
 
 <http://vocab.belgif.be/shacl/contract#ContractShape> a sh:NodeShape;
@@ -73,7 +73,7 @@
       sh:property [
           sh:hasValue <http://vocab.belgif.be/auth/bosa-contract-topic>;
           sh:path skos:inScheme
-        ]    
+        ]
     ], [
       sh:class skos:Concept;
       sh:nodeKind sh:IRI;
@@ -83,11 +83,24 @@
       sh:property [
           sh:hasValue <http://publications.europa.eu/resource/authority/access-right>;
           sh:path skos:inScheme
-        ]    
+        ]
+    ], [
+      sh:class skos:Concept;
+      sh:nodeKind sh:IRI;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:path <http://vocab.belgif.be/ns/dataentry#hasDataStatus>;
+      sh:property [
+          sh:hasValue <http://vocab.belgif.be/auth/contract-status>;
+          sh:path skos:inScheme
+        ]
     ], [
       sh:class schema:ContactPoint;
       sh:nodeKind sh:BlankNodeOrIRI;
       sh:path cv:hasContactPoint
+    ], [
+      sh:nodeKind sh:BlankNodeOrIRI;
+      sh:path <http://vocab.belgif.be/ns/contract#hasContractParty>
     ];
   sh:targetClass <http://vocab.belgif.be/ns/contract#Contract> .
   

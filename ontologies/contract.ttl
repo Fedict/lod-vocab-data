@@ -5,7 +5,7 @@
 @prefix contract: <http://vocab.belgif.be/ns/contract#> .
 
 <http://vocab.belgif.be/ns/contract#> a owl:Ontology ;
-	owl:versionInfo "Draft 2020-01-20" ;
+	owl:versionInfo "Draft 2020-02-05" ;
 	rdfs:label "Kontrakten"@de, "Contracts"@en, "Contrats"@fr, "Contracten"@nl ;
 	rdfs:comment "Kontrakten"@de, "Contracts"@en, "Contrats"@fr, "Contracten"@nl . 
 
@@ -17,3 +17,7 @@ contract:Contract a rdfs:Class, owl:Class ;
 		"Een schriftelijke of gesproken overeenkomst, in het bijzonder een overeenkomst met betrekking tot werkgelegenheid, verkoop of huur, die bedoeld is om wettelijk te kunnen worden gehandhaafd."@nl,
 		"Eine schriftliche oder mündliche Vereinbarung, insbesondere über Anstellung, Verkauf oder Miete, die gesetzlich durchsetzbar sein soll."@de,
 		"Un accord écrit ou parlé, en particulier concernant l'emploi, les ventes ou la location, qui est censé être exécutoire par la loi."@fr .
+
+contract:hasContractParty a rdf:Property, owl:ObjectProperty ;
+	rdfs:isDefinedBy contract: ;
+	rdfs:label "A partie contractante"@fr, "Has contract party"@en, "Hat Vertragspartner"@de, "Heeft contractpartij"@nl .
