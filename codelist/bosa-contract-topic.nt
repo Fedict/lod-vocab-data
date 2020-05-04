@@ -1,8 +1,8 @@
 <http://vocab.belgif.be/auth/bosa-contract-topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/title> "Contract topics"@en .
-<http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/title> "Contract topic"@fr .
-<http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/title> "Contract topic"@de .
-<http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/title> "Contract topic"@nl .
+<http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/title> "BOSA Contract topics"@en .
+<http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/title> "BOSA Contract topic"@fr .
+<http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/title> "BOSA Contract topic"@de .
+<http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/title> "BOSA Contract topic"@nl .
 <http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/description> "BOSA contract topics"@en .
 <http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/description> "BOSA contract topics"@fr .
 <http://vocab.belgif.be/auth/bosa-contract-topic> <http://purl.org/dc/terms/description> "BOSA contract topics"@de .
