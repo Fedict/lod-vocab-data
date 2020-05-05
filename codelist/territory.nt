@@ -1023,7 +1023,7 @@
 <http://vocab.belgif.be/auth/territory/140> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tsjechi\u00EB"@nl .
 <http://vocab.belgif.be/auth/territory/140> <http://www.w3.org/2004/02/skos/core#altLabel> "Tschechische Republik"@de .
 <http://vocab.belgif.be/auth/territory/140> <http://www.w3.org/2004/02/skos/core#altLabel> "Czech Republic"@en .
-<http://vocab.belgif.be/auth/territory/140> <http://www.w3.org/2004/02/skos/core#altLabel> "R\u00E9publique Tcheque"@fr .
+<http://vocab.belgif.be/auth/territory/140> <http://www.w3.org/2004/02/skos/core#altLabel> "R\u00E9publique tch\u00E8que"@fr .
 <http://vocab.belgif.be/auth/territory/140> <http://www.w3.org/2004/02/skos/core#altLabel> "Tsjechische Republiek"@nl .
 <http://vocab.belgif.be/auth/territory/140> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/3077311/> .
 <http://vocab.belgif.be/auth/territory/140> <http://www.wikidata.org/ontology#P299> "203" .
