@@ -8,7 +8,7 @@
 <http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/description> "Liste des territoires"@fr .
 <http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/description> "Liste der Territorien"@de .
 <http://vocab.belgif.be/auth/territory> <http://www.w3.org/2002/07/owl#versionInfo> "Production 2020-05-13" .
-<http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/modified> "2019-05-13T14:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/modified> "2019-05-13T16:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/251> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/territory> .
 <http://vocab.belgif.be/auth/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/territory/251> .
 <http://vocab.belgif.be/auth/territory/251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -2596,7 +2596,7 @@
 <http://vocab.belgif.be/auth/territory/148> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.belgif.be/auth/territory> .
 <http://vocab.belgif.be/auth/territory/148> <http://www.w3.org/2004/02/skos/core#notation> "148" .
 <http://vocab.belgif.be/auth/territory/148> <https://schema.org/startDate> "1993-01-01T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.belgif.be/auth/territory/148> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.belgif.be/auth/territory/148> <https://schema.org/endDate> "2019-02-11T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/148> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mazedonien"@de .
 <http://vocab.belgif.be/auth/territory/148> <http://www.w3.org/2004/02/skos/core#prefLabel> "Macedonia"@en .
 <http://vocab.belgif.be/auth/territory/148> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mac\u00E9doine"@fr .
