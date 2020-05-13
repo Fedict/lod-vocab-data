@@ -7,8 +7,8 @@
 <http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/description> "Lijst van territoria"@nl .
 <http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/description> "Liste des territoires"@fr .
 <http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/description> "Liste der Territorien"@de .
-<http://vocab.belgif.be/auth/territory> <http://www.w3.org/2002/07/owl#versionInfo> "Production 2020-05-04" .
-<http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/modified> "2019-01-31T22:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.belgif.be/auth/territory> <http://www.w3.org/2002/07/owl#versionInfo> "Production 2020-05-13" .
+<http://vocab.belgif.be/auth/territory> <http://purl.org/dc/terms/modified> "2019-05-13T14:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/251> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/territory> .
 <http://vocab.belgif.be/auth/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/territory/251> .
 <http://vocab.belgif.be/auth/territory/251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -859,11 +859,11 @@
 <http://vocab.belgif.be/auth/territory/605> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cook-Inseln"@de .
 <http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cook Islands"@en .
-<http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#prefLabel> "Iles Cook"@fr .
+<http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#prefLabel> "\u00EEles Cook"@fr .
 <http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cookeilanden"@nl .
 <http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#altLabel> "Cook-Inseln"@de .
 <http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#altLabel> "Cook Islands"@en .
-<http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#altLabel> "Iles Cook"@fr .
+<http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#altLabel> "\u00EEles Cook"@fr .
 <http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#altLabel> "Cookeilanden"@nl .
 <http://vocab.belgif.be/auth/territory/605> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/1899402/> .
 <http://vocab.belgif.be/auth/territory/605> <http://www.wikidata.org/ontology#P299> "184" .
@@ -1337,14 +1337,14 @@
 <http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#notation> "580" .
 <http://vocab.belgif.be/auth/territory/580> <https://schema.org/startDate> "1900-01-01T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/580> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#prefLabel> "Falklandinseln (Malvinen)"@de .
-<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#prefLabel> "Falkland Islands (Malvinas)"@en .
-<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#prefLabel> "Falkland, Iles (Malvinas)"@fr .
+<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#prefLabel> "Falklandinseln"@de .
+<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#prefLabel> "Falkland Islands"@en .
+<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#prefLabel> "\u00EEles Malouines"@fr .
 <http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#prefLabel> "Falklandeilanden (Malvinas)"@nl .
-<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#altLabel> "Falklandinseln (Malvinen)"@de .
-<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#altLabel> "Falkland Islands (Malvinas)"@en .
-<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#altLabel> "Falkland, Iles (Malvinas)"@fr .
-<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#altLabel> "Falklandeilanden (Malvinas)"@nl .
+<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#altLabel> "Falklandinseln"@de .
+<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#altLabel> "Falkland Islands"@en .
+<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#altLabel> "\u00EEles Malouines"@fr .
+<http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#altLabel> "Falklandeilanden"@nl .
 <http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/3474414/> .
 <http://vocab.belgif.be/auth/territory/580> <http://www.wikidata.org/ontology#P299> "238" .
 <http://vocab.belgif.be/auth/territory/580> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://publications.europa.eu/resource/authority/country/FLK> .
@@ -2499,7 +2499,7 @@
 <http://vocab.belgif.be/auth/territory/144> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/144> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moldawien"@de .
 <http://vocab.belgif.be/auth/territory/144> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moldova"@en .
-<http://vocab.belgif.be/auth/territory/144> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moldova"@fr .
+<http://vocab.belgif.be/auth/territory/144> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moldavie"@fr .
 <http://vocab.belgif.be/auth/territory/144> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moldavi\u00EB"@nl .
 <http://vocab.belgif.be/auth/territory/144> <http://www.w3.org/2004/02/skos/core#altLabel> "Republik Moldawien"@de .
 <http://vocab.belgif.be/auth/territory/144> <http://www.w3.org/2004/02/skos/core#altLabel> "Republic of Moldova"@en .
@@ -2579,11 +2579,11 @@
 <http://vocab.belgif.be/auth/territory/603> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#prefLabel> "Marshallinseln"@de .
 <http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#prefLabel> "Marshall Islands"@en .
-<http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#prefLabel> "Iles Marshal"@fr .
+<http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#prefLabel> "\u00EEles Marshal"@fr .
 <http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#prefLabel> "Marshalleilanden"@nl .
 <http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#altLabel> "Republik Marshallinseln"@de .
 <http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#altLabel> "Republic of the Marshall Islands"@en .
-<http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#altLabel> "R\u00E9publique des Iles Marshal"@fr .
+<http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#altLabel> "R\u00E9publique des \u00EEles Marshal"@fr .
 <http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#altLabel> "Republiek der Marshalleilanden"@nl .
 <http://vocab.belgif.be/auth/territory/603> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/2080185/> .
 <http://vocab.belgif.be/auth/territory/603> <http://www.wikidata.org/ontology#P299> "584" .
@@ -3010,6 +3010,24 @@
 <http://vocab.belgif.be/auth/territory/121> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://publications.europa.eu/resource/authority/country/NOR> .
 <http://vocab.belgif.be/auth/territory/121> <http://www.wikidata.org/ontology#P298> "NOR" .
 <http://vocab.belgif.be/auth/territory/121> <http://www.geonames.org/ontology#CountryCode> "NO" .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.belgif.be/auth/territory> .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#notation> "154" .
+<http://vocab.belgif.be/auth/territory/154> <https://schema.org/startDate> "2019-02-12T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.belgif.be/auth/territory/154> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nordmazedonien"@de .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#prefLabel> "Macedonia"@en .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mac\u00E9doine du Nord"@fr .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#prefLabel> "Noord-Macedoni\u00EB"@nl .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#altLabel> "Nordmazedonien Republic"@de .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#altLabel> "Republic of North Macedonia"@en .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#altLabel> "R\u00E9publique de Mac\u00E9doine du Nord"@fr .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#altLabel> "Republiek Noord-Macedoni\u00EB"@nl .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/433561/> .
+<http://vocab.belgif.be/auth/territory/154> <http://www.wikidata.org/ontology#P299> "807" .
+<http://vocab.belgif.be/auth/territory/154> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://publications.europa.eu/resource/authority/country/MKD> .
+<http://vocab.belgif.be/auth/territory/154> <http://www.wikidata.org/ontology#P298> "MKD" .
+<http://vocab.belgif.be/auth/territory/154> <http://www.geonames.org/ontology#CountryCode> "MK" .
 <http://vocab.belgif.be/auth/territory/213> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/territory> .
 <http://vocab.belgif.be/auth/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/territory/213> .
 <http://vocab.belgif.be/auth/territory/213> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -3379,11 +3397,11 @@
 <http://vocab.belgif.be/auth/territory/684> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "Franz\u00F6sisch-Polynesien"@de .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "French Polynesia"@en .
-<http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "Polynesie Francaise"@fr .
+<http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "Polyn\u00E9sie fran\00E7aise"@fr .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "Frans-Polynesi\u00EB"@nl .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "Franz\u00F6sisch-Polynesien"@de .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "French Polynesia"@en .
-<http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "Polynesie Francaise"@fr .
+<http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "Polyn\u00E9sie fran\00E7aise"@fr .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "Frans-Polynesi\u00EB"@nl .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/4030656/> .
 <http://vocab.belgif.be/auth/territory/684> <http://www.wikidata.org/ontology#P299> "258" .
@@ -3599,11 +3617,11 @@
 <http://vocab.belgif.be/auth/territory/623> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#prefLabel> "Salomonen"@de .
 <http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#prefLabel> "Solomon Islands"@en .
-<http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#prefLabel> "Iles de Salomon"@fr .
+<http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#prefLabel> "\u00EEles de Salomon"@fr .
 <http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#prefLabel> "Salomonseilanden"@nl .
 <http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#altLabel> "Salomonen"@de .
 <http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#altLabel> "Solomon Islands"@en .
-<http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#altLabel> "Iles de Salomon"@fr .
+<http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#altLabel> "\u00EEles de Salomon"@fr .
 <http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#altLabel> "Salomonseilanden"@nl .
 <http://vocab.belgif.be/auth/territory/623> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/2103350/> .
 <http://vocab.belgif.be/auth/territory/623> <http://www.wikidata.org/ontology#P299> "90" .
@@ -4824,11 +4842,11 @@
 <http://vocab.belgif.be/auth/territory/486> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#prefLabel> "Jungferninseln"@de .
 <http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#prefLabel> "Virgin Islands"@en .
-<http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#prefLabel> "Iles Vierges"@fr .
+<http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#prefLabel> "\u00EEles Vierges"@fr .
 <http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maagdeneilanden"@nl .
 <http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#altLabel> "Jungferninseln"@de .
 <http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#altLabel> "Virgin Islands"@en .
-<http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#altLabel> "Iles Vierges"@fr .
+<http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#altLabel> "\u00EEles Vierges"@fr .
 <http://vocab.belgif.be/auth/territory/486> <http://www.w3.org/2004/02/skos/core#altLabel> "Maagdeneilanden"@nl .
 <http://vocab.belgif.be/auth/territory/680> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://vocab.belgif.be/auth/territory> .
 <http://vocab.belgif.be/auth/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.belgif.be/auth/territory/680> .
