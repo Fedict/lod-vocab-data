@@ -3397,11 +3397,11 @@
 <http://vocab.belgif.be/auth/territory/684> <https://schema.org/endDate> "9999-12-31T00:00:00.000+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "Franz\u00F6sisch-Polynesien"@de .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "French Polynesia"@en .
-<http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "Polyn\u00E9sie fran\00E7aise"@fr .
+<http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "Polyn\u00E9sie fran\u00E7aise"@fr .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#prefLabel> "Frans-Polynesi\u00EB"@nl .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "Franz\u00F6sisch-Polynesien"@de .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "French Polynesia"@en .
-<http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "Polyn\u00E9sie fran\00E7aise"@fr .
+<http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "Polyn\u00E9sie fran\u00E7aise"@fr .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#altLabel> "Frans-Polynesi\u00EB"@nl .
 <http://vocab.belgif.be/auth/territory/684> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/4030656/> .
 <http://vocab.belgif.be/auth/territory/684> <http://www.wikidata.org/ontology#P299> "258" .
