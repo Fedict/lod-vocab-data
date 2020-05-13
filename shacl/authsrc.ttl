@@ -262,7 +262,7 @@
 
 <http://vocab.belgif.be/shacl/authsrc#OrganizationShape> a sh:NodeShape;
   sh:property [
-      sh:datatype xdf:string;
+      sh:datatype xsd:string;
       sh:path skos:altLabel
     ], [
       sh:datatype xsd:string;
